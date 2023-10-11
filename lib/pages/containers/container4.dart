@@ -1,5 +1,4 @@
 import 'package:another_stepper/another_stepper.dart';
-import 'package:another_stepper/widgets/common/stepper_dot_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_builder/responsive_builder.dart';
