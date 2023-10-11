@@ -23153,7 +23153,8 @@ ab3:function ab3(a,b){this.a=a
 this.b=b},
 ab_:function ab_(){},
 ab5:function ab5(){},
-ab6:function ab6(a){this.a=a},
+ab6:function ab6(a,b){this.a=a
+this.b=b},
 YL:function YL(a,b){this.a=a
 this.b=b},
 YI:function YI(a,b){this.a=a
@@ -73322,38 +73323,12 @@ return new A.xa(A.amR(A.cr(A.a([A.Id(s.abC(),q,s.abE()),new A.u4(s.d),new A.DI(s
 abD(){var s=null,r=this.CR(),q=$.oB
 q.toString
 return A.bA(s,A.dV(A.a([B.lB,r,new A.qf(new A.ab4(this),B.b0,25,B.Br,new A.an(q,1/0,0,1/0),B.m,s,t.q3)],t.p),B.Ff,B.r),B.m,s,s,s,70,B.la,s,s)},
-abC(){var s,r,q,p,o=this,n=null,m=o.CR(),l=$.a7.aa$.z.j(0,o.d)
-if(l==null){l=o.c
-l.toString}l=o.kD("Home",l)
-s=$.a7.aa$.z.j(0,o.e)
-if(s==null){s=o.c
-s.toString}s=o.kD("About",s)
-r=$.a7.aa$.z.j(0,o.f)
-if(r==null){r=o.c
-r.toString}r=o.kD("Biography",r)
-q=$.a7.aa$.z.j(0,o.r)
-if(q==null){q=o.c
-q.toString}p=t.p
-q=A.dV(A.a([l,s,r,o.kD("Skills",q)],p),B.w,B.r)
-r=A.pm(n,n,$.aZ(),n,n,n,n,n,n,n,n,n,n,n,new A.bV(A.mt(0),B.t),n,n,n,n)
-return A.bA(n,A.dV(A.a([m,q,A.bA(n,A.uB(A.bf("LET'S TALK",n,n,A.Ch().$0(),n,n),new A.ab_(),r),B.m,n,n,n,40,n,n,120)],p),B.iD,B.r),B.m,n,n,n,70,B.AJ,n,n)},
-abE(){var s,r,q,p,o=this,n=null,m=o.CR(),l=$.a7.aa$.z.j(0,o.d)
-if(l==null){l=o.c
-l.toString}l=o.kD("Home",l)
-s=$.a7.aa$.z.j(0,o.e)
-if(s==null){s=o.c
-s.toString}s=o.kD("About",s)
-r=$.a7.aa$.z.j(0,o.f)
-if(r==null){r=o.c
-r.toString}r=o.kD("Biography",r)
-q=$.a7.aa$.z.j(0,o.r)
-if(q==null){q=o.c
-q.toString}p=t.p
-q=A.dV(A.a([l,s,r,o.kD("Skills",q)],p),B.w,B.r)
-r=A.pm(n,n,$.aZ(),n,n,n,n,n,n,n,n,n,n,n,new A.bV(A.mt(0),B.t),n,n,n,n)
-return A.bA(n,A.dV(A.a([m,q,A.bA(n,A.uB(A.bf("LET'S TALK",n,n,A.Ch().$0(),n,n),new A.ab5(),r),B.m,n,n,n,40,n,n,120)],p),B.iD,B.r),B.m,n,n,n,70,B.AA,n,n)},
+abC(){var s=this,r=null,q=s.CR(),p=t.p,o=A.dV(A.a([s.kD("Home",$.a7.aa$.z.j(0,s.d)),s.kD("About",$.a7.aa$.z.j(0,s.e)),s.kD("Biography",$.a7.aa$.z.j(0,s.f)),s.kD("Skills",$.a7.aa$.z.j(0,s.r))],p),B.w,B.r),n=A.pm(r,r,$.aZ(),r,r,r,r,r,r,r,r,r,r,r,new A.bV(A.mt(0),B.t),r,r,r,r)
+return A.bA(r,A.dV(A.a([q,o,A.bA(r,A.uB(A.bf("LET'S TALK",r,r,A.Ch().$0(),r,r),new A.ab_(),n),B.m,r,r,r,40,r,r,120)],p),B.iD,B.r),B.m,r,r,r,70,B.AJ,r,r)},
+abE(){var s=this,r=null,q=s.CR(),p=t.p,o=A.dV(A.a([s.kD("Home",$.a7.aa$.z.j(0,s.d)),s.kD("About",$.a7.aa$.z.j(0,s.e)),s.kD("Biography",$.a7.aa$.z.j(0,s.f)),s.kD("Skills",$.a7.aa$.z.j(0,s.r))],p),B.w,B.r),n=A.pm(r,r,$.aZ(),r,r,r,r,r,r,r,r,r,r,r,new A.bV(A.mt(0),B.t),r,r,r,r)
+return A.bA(r,A.dV(A.a([q,o,A.bA(r,A.uB(A.bf("LET'S TALK",r,r,A.Ch().$0(),r,r),new A.ab5(),n),B.m,r,r,r,40,r,r,120)],p),B.iD,B.r),B.m,r,r,r,70,B.AA,r,r)},
 kD(a,b){var s=null
-return A.bA(s,A.aij(!1,A.bf(a,s,s,B.Mk,s,s),B.m,s,s,s,s,s,new A.ab6(b),s,s),B.m,s,s,s,s,B.AD,s,s)},
+return A.bA(s,A.aij(!1,A.bf(a,s,s,B.Mk,s,s),B.m,s,s,s,s,s,new A.ab6(this,b),s,s),B.m,s,s,s,s,B.AD,s,s)},
 CR(){var s=null
 return A.bA(s,new A.Fh(A.a([B.kJ,B.FD],t.t_),"CV",s),B.m,s,s,s,s,s,s,110)}}
 A.ab4.prototype={
@@ -73403,10 +73378,12 @@ A.ab5.prototype={
 $0(){},
 $S:0}
 A.ab6.prototype={
-$0(){var s=0,r=A.R(t.H),q=this
+$0(){var s=0,r=A.R(t.H),q=this,p
 var $async$$0=A.S(function(a,b){if(a===1)return A.O(b,r)
-while(true)switch(s){case 0:s=2
-return A.T(A.xl(q.a,0,B.dK,B.ae,B.bh),$async$$0)
+while(true)switch(s){case 0:p=q.b
+if(p==null){p=q.a.c
+p.toString}s=2
+return A.T(A.xl(p,0,B.dK,B.ae,B.bh),$async$$0)
 case 2:return A.P(null,r)}})
 return A.Q($async$$0,r)},
 $S:7}
