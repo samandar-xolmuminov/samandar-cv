@@ -1,16 +1,14 @@
-import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:responsive_builder/responsive_builder.dart';
-import 'package:samandar/utils/colors.dart';
+import "package:flutter/material.dart";
+import "package:flutter_devicon/flutter_devicon.dart";
+import "package:flutter_vector_icons/flutter_vector_icons.dart";
+import "package:google_fonts/google_fonts.dart";
+import "package:responsive_builder/responsive_builder.dart";
+import "package:samandar/utils/colors.dart";
+import "package:url_launcher/url_launcher.dart";
 
-class Container2 extends StatefulWidget {
+class Container2 extends StatelessWidget {
   const Container2({super.key});
 
-  @override
-  State<Container2> createState() => _Container2State();
-}
-
-class _Container2State extends State<Container2> {
   @override
   Widget build(BuildContext context) {
     return ScreenTypeLayout(
@@ -22,48 +20,108 @@ class _Container2State extends State<Container2> {
 
   Widget DesktopContainer2() {
     return Container(
-      margin: const EdgeInsets.symmetric(vertical: 50),
-      child: Row(
+      margin: const EdgeInsets.only(top: 100),
+      decoration: BoxDecoration(
+          gradient: LinearGradient(
+        colors: [const Color(0xfffce9e1), Colors.grey.shade50],
+        begin: Alignment.topRight,
+      )),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Expanded(child: Image.asset('assets/elbek1.jpg')),
-          Expanded(
-              child: Padding(
-            padding: const EdgeInsets.only(left: 70, right: 50),
+          const SizedBox(
+            height: 20,
+          ),
+          const Row(),
+          Text(
+            'Flutter Features',
+            style: GoogleFonts.bodoniModa(
+                fontSize: 35, color: Colors.black, fontWeight: FontWeight.w500),
+          ),
+          const SizedBox(
+            height: 30,
+          ),
+          Wrap(
+            crossAxisAlignment: WrapCrossAlignment.center,
+            spacing: 30,
+            runSpacing: 30,
+            children: [
+              featuresInfo(
+                  'What is Flutter?',
+                  "Flutter is an open source framework developed and supported by Google. Frontend and full-stack developers use Flutter to build an application's user interface (UI) for multiple platforms with a single codebase.",
+                  FlutterDEVICON.flutter_plain),
+              featuresInfo(
+                  'Mobile App development',
+                  'Flutter is an awesome framework for building mobile apps. It offers fast development times, beautiful and responsive designs, and a single codebase for both iOS and Android.',
+                  Ionicons.ios_phone_portrait_outline),
+              featuresInfo(
+                  'Web App development',
+                  'The web itself is a flexible platform, but Flutter is ideal for building web applications like PWAs or SPAs and bringing your existing mobile app to the web.',
+                  MaterialCommunityIcons.web),
+            ],
+          ),
+          SizedBox(height: 50,),
+          ElevatedButton(
+            onPressed: () {
+              launch('https://flutter.dev/');
+            },
+
+            child: Text(
+              'VIEW MORE FEATURES',
+              style: GoogleFonts.akatab(color: AppColors.onprimary,fontWeight: FontWeight.w500),
+            ),
+            style: ElevatedButton.styleFrom(
+              minimumSize: Size(200, 50),
+              elevation: 0,
+              backgroundColor: const Color(0xfffce9e1),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(0),
+              ),
+            ),
+          ),
+          const SizedBox(
+            height: 100,
+          ),
+        ],
+      ),
+    );
+  }
+
+  Padding featuresInfo(String title, String subtitle, IconData iconData) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 15),
+      child: Wrap(
+        runSpacing: 10,
+        alignment: WrapAlignment.center,
+        children: [
+          Icon(
+            iconData,
+            color: AppColors.onprimary,
+            size: 70,
+          ),
+          const SizedBox(
+            width: 10,
+          ),
+          Container(
+            constraints: const BoxConstraints(maxWidth: 300),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Biography',
+                  title,
                   style: GoogleFonts.bodoniModa(
-                      fontSize: 50, fontWeight: FontWeight.bold),
-                ),
-                const SizedBox(
-                  height: 40,
-                ),
-                Text(
-                  """Talented UI/UX designer with 8+ years of experience, seeking to elevate work at ModelTheme, Inc. As Lead UI/UX Head completed project before dead line. ittis augue, id sollicitudin tristique ut.\n\n\nGain visiblity & authorities with a unique mix of content strategy & designing I seek to understand your customer & the problems they need to solve. Then persusion science and marketng strategy to create kind content that rapidly drives traffic and builds authority. Generating lead magnets, content creation editing and optimization, multi funnel marketing.""",
-                  style: GoogleFonts.aBeeZee(
-                    color: Colors.grey.shade600,
-                    fontSize: 16,
+                    fontSize: 20,
+                    color: Colors.black,
                   ),
                 ),
-                Row(
-                  children: [
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        TextButton.icon(onPressed: (){}, icon: Icon(Icons.person,color: AppColors.onprimary,), label:  Text('Elbek Mirzamakhmudov',style: TextStyle(fontSize: 15,color: AppColors.primary),),),
-                        TextButton.icon(onPressed: (){}, icon: Icon(Icons.calendar_month,color: AppColors.onprimary,), label:  Text('8 August, 2005',style: TextStyle(fontSize: 15,color: AppColors.primary),),),
-                        TextButton.icon(onPressed: (){}, icon: Icon(Icons.call,color: AppColors.onprimary,), label:  Text('(+998) 93 666 99 53',style: TextStyle(fontSize: 15,color: AppColors.primary),),),
-                        TextButton.icon(onPressed: (){}, icon: Icon(Icons.location_on_outlined,color: AppColors.onprimary,), label:  Text('Tashkent, Uzbekistan',style: TextStyle(fontSize: 15,color: AppColors.primary),),),
-                        TextButton.icon(onPressed: (){}, icon: Icon(Icons.email,color: AppColors.onprimary,), label:  Text('elbekmirzamakhmudov@gmail.com',style: TextStyle(fontSize: 15,color: AppColors.primary),),),
-                      ],
-                    )
-                  ],
-                )
+                Text(
+                  subtitle,
+                  style: GoogleFonts.bodoniModa(
+                      fontSize: 15, color: Colors.grey.shade500),
+                ),
               ],
             ),
-          )),
+          )
         ],
       ),
     );

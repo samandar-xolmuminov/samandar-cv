@@ -109,7 +109,7 @@ class _Container1State extends State<Container1> {
                       style:
                           GoogleFonts.abhayaLibre(color: AppColors.onprimary),
                     ),
-                    const TextSpan(text: '\na Mobile App developer.')
+                    const TextSpan(text: '\na Mobile App (Flutter) developer.')
                   ]),
                   style: GoogleFonts.abhayaLibre(
                       fontSize: w! / 30, fontWeight: FontWeight.normal),
@@ -118,7 +118,7 @@ class _Container1State extends State<Container1> {
                   height: 10,
                 ),
                 Text(
-                  'I’m a Mobile App developer based in Tashkent and enjoy creating apps & websites. I love travelling, game & music.',
+                  'I’m a Mobile App (Flutter) developer based in Tashkent and enjoy creating apps & websites. I love travelling, game & music.',
                   style: GoogleFonts.aBeeZee(
                     color: Colors.grey.shade600,
                     fontSize: 16,
