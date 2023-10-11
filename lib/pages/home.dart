@@ -14,6 +14,10 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  final container1Key = GlobalKey();
+  final container2Key = GlobalKey();
+  final container3Key = GlobalKey();
+  final container4Key = GlobalKey();
   @override
   Widget build(BuildContext context) {
     w = MediaQuery.of(context).size.width;
@@ -24,11 +28,11 @@ class _HomeState extends State<Home> {
         child: Container(
           child: Column(
             children: [
-              NavBar(),
-              Container1(),
-              Container2(),
-              Container3(),
-              Container4(),
+              NavBar(itemKey1: container1Key,itemKey2: container2Key,itemKey3: container3Key,itemKey4: container4Key,),
+              Container1(key: container1Key,),
+              Container2(key: container2Key,),
+              Container3(key: container3Key,),
+              Container4(key: container4Key,),
             ],
           ),
         ),

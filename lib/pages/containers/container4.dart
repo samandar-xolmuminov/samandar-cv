@@ -41,7 +41,7 @@ class Container4 extends StatelessWidget {
                   activeBarColor: Colors.grey.shade300,
                     inActiveBarColor: Colors.grey.shade300,
                     barThickness: .7,
-                    verticalGap: 70,
+                    verticalGap: 100,
                     stepperList: [
                   StepperData(
                       iconWidget:Icon(Icons.expand_circle_down_outlined,color: AppColors.onprimary,),
