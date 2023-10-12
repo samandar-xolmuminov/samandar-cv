@@ -129,17 +129,14 @@ class _Container1State extends State<Container1> {
                 ),
                 Row(
                   children: [
-                    SizedBox(
-                      height: 40,
-                      width: 120,
-                      child: ElevatedButton(
-                        onPressed: () {},
-                        style: ElevatedButton.styleFrom(
-                            backgroundColor: AppColors.onprimary,
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(0))),
-                        child: Text("CONTACT ME",style: GoogleFonts.akatab(),),
-                      ),
+                    ElevatedButton(
+                      onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                          fixedSize: Size(115, 40),
+                          backgroundColor: AppColors.onprimary,
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(0))),
+                      child: Text("CONTACT ME",style: GoogleFonts.akatab(),),
                     ),
                   ],
                 ),
@@ -200,22 +197,15 @@ class _Container1State extends State<Container1> {
                 ),
                 Row(
                   children: [
-                    SizedBox(
-                      height: 40,
-                      width: 120,
-                      child: ElevatedButton(
-                        onPressed: () {},
-                        style: ElevatedButton.styleFrom(
-                            backgroundColor: AppColors.onprimary,
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(0))),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Text("CONTACT ME",style: GoogleFonts.akatab(),),
-                          ],
-                        ),
-                      ),
+                    ElevatedButton(
+                      onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                          fixedSize: Size(115, 40),
+                          backgroundColor: AppColors.onprimary,
+
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(0))),
+                      child: Text("CONTACT ME",style: GoogleFonts.akatab(),),
                     ),
                   ],
                 ),

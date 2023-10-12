@@ -50,8 +50,9 @@ class _Container4State extends State<Container4> {
                 height: 50,
               ),
               Container(
-                constraints: const BoxConstraints(maxWidth: 500,maxHeight: 150),
+                constraints: const BoxConstraints(maxWidth: 500,maxHeight: 170),
                 child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Column(
@@ -125,8 +126,9 @@ class _Container4State extends State<Container4> {
                 ),
               ),
               Container(
-                constraints: const BoxConstraints(maxWidth: 500,maxHeight: 150),
+                constraints: const BoxConstraints(maxWidth: 500,maxHeight: 170,),
                 child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Column(
@@ -212,86 +214,83 @@ class _Container4State extends State<Container4> {
               const SizedBox(
                 height: 50,
               ),
-              Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Container(
-                    constraints:
-                    const BoxConstraints(maxWidth: 500,maxHeight: 150),
-                    child: Row(
+              Container(
+                constraints:
+                const BoxConstraints(maxWidth: 500,maxHeight:170),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Column(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        Column(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Icon(
-                              Icons.expand_circle_down_outlined,
-                              color: AppColors.onprimary,
-                            ),
-                            Expanded(
-                                child: VerticalDivider(
-                                  color: Colors.grey.shade300,
-                                  width: 1.5,
-                                  endIndent: 0,
-                                  indent: 0,
-                                  thickness: 1,
-                                )),
-                          ],
+                        Icon(
+                          Icons.expand_circle_down_outlined,
+                          color: AppColors.onprimary,
                         ),
-                        const SizedBox(
-                          width: 10,
-                        ),
-                        Container(
-                          constraints: const BoxConstraints(maxWidth: 450),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.min,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              MouseRegion(
-                                onEnter: (event) {
-                                  setState(() {
-                                    stepperColor3=AppColors.onprimary;
-                                  });
-                                },
-                                onExit: (event) {
-                                  setState(() {
-                                    stepperColor3=AppColors.primary;
-                                  });
-                                },
-                                child: InkWell(
-                                  onTap: (){
-                                    launch('https://githubit.com/');
-                                  },
-                                  child: Text(
-                                    'Mobile App Developer in Githubit',
-                                    style: GoogleFonts.aBeeZee(
-                                      color: stepperColor3,
-                                      fontSize: 22,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              const SizedBox(height: 5,),
-                              Text("Jun 2023 - Present",
-                                  style: GoogleFonts.aBeeZee(
-                                    color: Colors.grey.shade600,
-                                    fontSize: 15,
-                                  )),
-                              const SizedBox(height: 7,),
-                              Text(
-                                'A mobile app developer uses programming languages and development skills to create, test, and develop applications on mobile devices.',
-                                style: GoogleFonts.aBeeZee(
-                                  color: Colors.grey,
-                                  fontSize: 15,
-                                ),
-                              ),
-                            ],
-                          ),
-                        )
+                        Expanded(
+                            child: VerticalDivider(
+                              color: Colors.grey.shade300,
+                              width: 1.5,
+                              endIndent: 0,
+                              indent: 0,
+                              thickness: 1,
+                            )),
                       ],
                     ),
-                  ),
-              ],),
+                    const SizedBox(
+                      width: 10,
+                    ),
+                    Container(
+                      constraints: const BoxConstraints(maxWidth: 450),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          MouseRegion(
+                            onEnter: (event) {
+                              setState(() {
+                                stepperColor3=AppColors.onprimary;
+                              });
+                            },
+                            onExit: (event) {
+                              setState(() {
+                                stepperColor3=AppColors.primary;
+                              });
+                            },
+                            child: InkWell(
+                              onTap: (){
+                                launch('https://githubit.com/');
+                              },
+                              child: Text(
+                                'Mobile App Developer in Githubit',
+                                style: GoogleFonts.aBeeZee(
+                                  color: stepperColor3,
+                                  fontSize: 22,
+                                ),
+                              ),
+                            ),
+                          ),
+                          const SizedBox(height: 5,),
+                          Text("Jun 2023 - Present",
+                              style: GoogleFonts.aBeeZee(
+                                color: Colors.grey.shade600,
+                                fontSize: 15,
+                              )),
+                          const SizedBox(height: 7,),
+                          Text(
+                            'A mobile app developer uses programming languages and development skills to create, test, and develop applications on mobile devices.',
+                            style: GoogleFonts.aBeeZee(
+                              color: Colors.grey,
+                              fontSize: 15,
+                            ),
+                          ),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              ),
             ],
           ),
         ],
@@ -304,6 +303,7 @@ class _Container4State extends State<Container4> {
               constraints:
                    BoxConstraints(maxWidth: w!,maxHeight: 200),
               child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Column(
@@ -328,49 +328,52 @@ class _Container4State extends State<Container4> {
                   ),
                   Container(
                     constraints: BoxConstraints(maxWidth: w!*0.8),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        MouseRegion(
-                          onEnter: (event) {
-                            setState(() {
-                              color=AppColors.onprimary;
-                            });
-                          },
-                          onExit: (event) {
-                            setState(() {
-                              color=AppColors.primary;
-                            });
-                          },
-                          child: InkWell(
-                            onTap: (){
-                              launch(url);
+                    child: SingleChildScrollView(
+                      scrollDirection: Axis.vertical,
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          MouseRegion(
+                            onEnter: (event) {
+                              setState(() {
+                                color=AppColors.onprimary;
+                              });
                             },
-                            child: Text(
-                              title,
-                              style: GoogleFonts.aBeeZee(
-                                color: color,
-                                fontSize: 22,
+                            onExit: (event) {
+                              setState(() {
+                                color=AppColors.primary;
+                              });
+                            },
+                            child: InkWell(
+                              onTap: (){
+                                launch(url);
+                              },
+                              child: Text(
+                                title,
+                                style: GoogleFonts.aBeeZee(
+                                  color: color,
+                                  fontSize: 22,
+                                ),
                               ),
                             ),
                           ),
-                        ),
-                        const SizedBox(height: 5,),
-                        Text(duration,
+                          const SizedBox(height: 5,),
+                          Text(duration,
+                              style: GoogleFonts.aBeeZee(
+                                color: Colors.grey.shade600,
+                                fontSize: 15,
+                              )),
+                          const SizedBox(height: 7,),
+                          Text(
+                            subtitle,
                             style: GoogleFonts.aBeeZee(
-                              color: Colors.grey.shade600,
+                              color: Colors.grey,
                               fontSize: 15,
-                            )),
-                        const SizedBox(height: 7,),
-                        Text(
-                          subtitle,
-                          style: GoogleFonts.aBeeZee(
-                            color: Colors.grey,
-                            fontSize: 15,
+                            ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   )
                 ],
