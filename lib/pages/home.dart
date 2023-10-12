@@ -1,3 +1,5 @@
+import 'package:elbek/pages/containers/container5.dart';
+import 'package:elbek/pages/containers/container6.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_builder/responsive_builder.dart';
@@ -18,9 +20,9 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   final container1Key = GlobalKey();
-  final container2Key = GlobalKey();
   final container3Key = GlobalKey();
   final container4Key = GlobalKey();
+  final container5Key = GlobalKey();
   @override
   Widget build(BuildContext context) {
     w = MediaQuery.of(context).size.width;
@@ -36,9 +38,11 @@ class _HomeState extends State<Home> {
               tablet: navBarTablet(),
             ),
             Container1(key: container1Key,),
-            Container2(key: container2Key,),
+            const Container2(),
             Container3(key: container3Key,),
             Container4(key: container4Key,),
+            Container5(key: container5Key,),
+            Container6(),
           ],
         ),
       ),
@@ -72,16 +76,6 @@ class _HomeState extends State<Home> {
                 ),),
               PopupMenuItem(
                 onTap:()  async {
-                  await Scrollable.ensureVisible(container2Key.currentContext ?? context,duration: const Duration(seconds: 1));
-                },
-                child: const Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text('About',),
-                  ],
-                ),),
-              PopupMenuItem(
-                onTap:()  async {
                   await Scrollable.ensureVisible(container3Key.currentContext ?? context,duration: const Duration(seconds: 1));
                 },
                 child: const Row(
@@ -97,7 +91,17 @@ class _HomeState extends State<Home> {
                 child: const Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text('Skills',),
+                    Text('Expertise',),
+                  ],
+                ),),
+              PopupMenuItem(
+                onTap:()  async {
+                  await Scrollable.ensureVisible(container5Key.currentContext ?? context,duration: const Duration(seconds: 1));
+                },
+                child: const Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text('Awards',),
                   ],
                 ),),
             ];
@@ -115,9 +119,9 @@ class _HomeState extends State<Home> {
         Row(
           children: [
             navButton('Home',container1Key ),
-            navButton('About',container2Key),
             navButton('Biography',container3Key),
-            navButton('Skills',container4Key),
+            navButton('Expertise',container4Key),
+            navButton('Awards',container5Key),
           ],
         ),
         Container(
@@ -136,30 +140,32 @@ class _HomeState extends State<Home> {
   Widget navBarTablet()=>Container(
     margin: const EdgeInsets.symmetric(vertical: 10),
     height: 70,
-    child: Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: [
-        navLogo(),
-        Row(
-
-          children: [
-            navButton('Home',container1Key ),
-            navButton('About',container2Key),
-            navButton('Biography',container3Key ),
-            navButton('Skills',container4Key ),
-          ],
-        ),
-        Container(
-          height: 40,
-          width: 120,
-          child: ElevatedButton(
-            onPressed: (){},
-            style: ElevatedButton.styleFrom(backgroundColor:
-            AppColors.onprimary,shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(0))),
-            child: Text("LET'S TALK",style: GoogleFonts.akatab()),
+    child: SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          navLogo(),
+          Row(
+            children: [
+              navButton('Home',container1Key ),
+              navButton('Biography',container3Key ),
+              navButton('Expertise',container4Key ),
+              navButton('Awards',container5Key ),
+            ],
           ),
-        ),
-      ],
+          Container(
+            height: 40,
+            width: 120,
+            child: ElevatedButton(
+              onPressed: (){},
+              style: ElevatedButton.styleFrom(backgroundColor:
+              AppColors.onprimary,shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(0))),
+              child: Text("LET'S TALK",style: GoogleFonts.akatab()),
+            ),
+          ),
+        ],
+      ),
     ),
   );
 

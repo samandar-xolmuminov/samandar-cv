@@ -29,8 +29,17 @@ class _Container4State extends State<Container4> {
 
   Widget DesktopContainer4() {
     return Container(
-      margin: const EdgeInsets.symmetric(vertical: 50),
-      color: AppColors.backColor,
+      padding: EdgeInsets.symmetric(vertical: 50),
+      decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: [
+              Colors.grey.shade50,
+              AppColors.backColor,
+
+            ],
+            begin: Alignment.topRight,
+          )
+      ),
       child: Wrap(
         alignment: WrapAlignment.spaceEvenly,
         crossAxisAlignment: WrapCrossAlignment.start,
@@ -385,7 +394,6 @@ class _Container4State extends State<Container4> {
 
   Widget MobileContainer4() {
     return Container(
-      margin: const EdgeInsets.symmetric(vertical: 30,),
       color: AppColors.backColor,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
