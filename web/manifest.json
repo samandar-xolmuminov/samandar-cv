@@ -1,11 +1,11 @@
 {
-    "name": "samandar",
-    "short_name": "samandar",
+    "name": "elbek",
+    "short_name": "elbek",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "CV for Samandar",
+    "description": "CV for elbek",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

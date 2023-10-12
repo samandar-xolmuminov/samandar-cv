@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:samandar/pages/home.dart';
+import 'package:elbek/pages/home.dart';
 
 void main() {
   runApp(const MyApp());

@@ -3,7 +3,7 @@ import "package:flutter_devicon/flutter_devicon.dart";
 import "package:flutter_vector_icons/flutter_vector_icons.dart";
 import "package:google_fonts/google_fonts.dart";
 import "package:responsive_builder/responsive_builder.dart";
-import "package:samandar/utils/colors.dart";
+import "package:elbek/utils/colors.dart";
 import "package:url_launcher/url_launcher.dart";
 
 class Container2 extends StatelessWidget {

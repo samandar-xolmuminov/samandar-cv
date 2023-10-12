@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_builder/responsive_builder.dart';
-import 'package:samandar/utils/colors.dart';
-import 'package:samandar/utils/constants.dart';
+import 'package:elbek/utils/colors.dart';
+import 'package:elbek/utils/constants.dart';
 
 class Container1 extends StatefulWidget {
   const Container1({super.key});
@@ -209,7 +209,12 @@ class _Container1State extends State<Container1> {
                             backgroundColor: AppColors.onprimary,
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(0))),
-                        child: Text("CONTACT ME",style: GoogleFonts.akatab()),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Text("CONTACT ME",style: GoogleFonts.akatab(),),
+                          ],
+                        ),
                       ),
                     ),
                   ],

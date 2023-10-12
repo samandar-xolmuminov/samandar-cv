@@ -2,8 +2,8 @@ import 'package:another_stepper/another_stepper.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_builder/responsive_builder.dart';
-import 'package:samandar/utils/colors.dart';
-import 'package:samandar/utils/constants.dart';
+import 'package:elbek/utils/colors.dart';
+import 'package:elbek/utils/constants.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class Container4 extends StatefulWidget {

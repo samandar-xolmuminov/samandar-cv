@@ -1,6 +1,6 @@
-# samandar
+# cv_portfolio
 
-CV for Samandar
+CV for portfolio
 
 ## Getting Started
 

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_builder/responsive_builder.dart';
-import 'package:samandar/pages/containers/container1.dart';
-import 'package:samandar/pages/containers/container2.dart';
-import 'package:samandar/pages/containers/container3.dart';
-import 'package:samandar/pages/containers/container4.dart';
-import 'package:samandar/utils/colors.dart';
-import 'package:samandar/utils/constants.dart';
+import 'package:elbek/pages/containers/container1.dart';
+import 'package:elbek/pages/containers/container2.dart';
+import 'package:elbek/pages/containers/container3.dart';
+import 'package:elbek/pages/containers/container4.dart';
+import 'package:elbek/utils/colors.dart';
+import 'package:elbek/utils/constants.dart';
 import 'package:simple_gradient_text/simple_gradient_text.dart';
 
 class Home extends StatefulWidget {

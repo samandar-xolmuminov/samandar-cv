@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "com.samandar" "\0"
-            VALUE "FileDescription", "samandar" "\0"
+            VALUE "CompanyName", "com.elbek" "\0"
+            VALUE "FileDescription", "elbek" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "samandar" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2023 com.samandar. All rights reserved." "\0"
-            VALUE "OriginalFilename", "samandar.exe" "\0"
-            VALUE "ProductName", "samandar" "\0"
+            VALUE "InternalName", "elbek" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2023 com.elbek. All rights reserved." "\0"
+            VALUE "OriginalFilename", "elbek.exe" "\0"
+            VALUE "ProductName", "elbek" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
