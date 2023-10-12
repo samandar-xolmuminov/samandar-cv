@@ -89,9 +89,8 @@ class Container6 extends StatelessWidget {
   }
   Widget MobileContainer6() {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 10,vertical: 0),
+      padding: EdgeInsets.symmetric(horizontal: 10,vertical: 10),
       width: w!,
-      height: 70,
       child: Wrap(
         spacing: 10,
         runSpacing: 10,
@@ -161,8 +160,8 @@ class Container6 extends StatelessWidget {
   Widget TabletContainer6() {
     return Container(
       margin: EdgeInsets.symmetric(horizontal: 25),
+      padding: EdgeInsets.all(10),
       width: w!,
-      height: 70,
       child: Wrap(
         spacing: 40,
         crossAxisAlignment: WrapCrossAlignment.center,

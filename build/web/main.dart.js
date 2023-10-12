@@ -42568,14 +42568,14 @@ s=t.p
 r=A.kx(B.cd,A.a([A.d3(o,o,B.ik,o,new A.Wz(),o,20,o),A.d3(o,o,B.il,o,new A.WA(),o,20,o),A.d3(o,o,B.ig,o,new A.WB(),o,20,o),A.d3(o,o,B.ij,o,new A.WC(),o,20,o),A.d3(o,o,B.ih,o,new A.WD(),o,20,o),A.d3(o,o,B.im,o,new A.WE(),o,20,o),A.d3(o,o,B.ii,o,new A.WF(),o,20,o)],s),B.cP,0,0)
 q=A.aR("\xa9 2023 CV. All Rights Reserved.",o,o,A.bx().$1$fontSize(16),o,o)
 p=A.bx().$1$fontSize(16)
-return A.b6(o,A.kx(B.jW,A.a([r,q,A.lX(A.bk(A.a([A.bk(o,o,A.bx().$1$fontWeight(B.V),"Elbek")],t.VO),o,p,"Developed by "),o)],s),B.fU,10,10),B.j,o,o,o,70,o,new A.ax(10,0,10,0),n)},
+return A.b6(o,A.kx(B.jW,A.a([r,q,A.lX(A.bk(A.a([A.bk(o,o,A.bx().$1$fontWeight(B.V),"Elbek")],t.VO),o,p,"Developed by "),o)],s),B.fU,10,10),B.j,o,o,o,o,o,new A.ax(10,10,10,10),n)},
 X_(){var s,r,q,p,o=null,n=$.h2
 n.toString
 s=t.p
 r=A.kx(B.cd,A.a([A.d3(o,o,B.ik,o,new A.WG(),o,20,o),A.d3(o,o,B.il,o,new A.WH(),o,20,o),A.d3(o,o,B.ig,o,new A.WI(),o,20,o),A.d3(o,o,B.ij,o,new A.WJ(),o,20,o),A.d3(o,o,B.ih,o,new A.WK(),o,20,o),A.d3(o,o,B.im,o,new A.WL(),o,20,o),A.d3(o,o,B.ii,o,new A.WM(),o,20,o)],s),B.cP,0,0)
 q=A.aR("\xa9 2023 CV. All Rights Reserved.",o,o,A.bx().$1$fontSize(16),o,o)
 p=A.bx().$1$fontSize(16)
-return A.b6(o,A.kx(B.jW,A.a([r,q,A.lX(A.bk(A.a([A.bk(o,o,A.bx().$1$fontWeight(B.V),"Elbek")],t.VO),o,p,"Developed by "),o)],s),B.fU,0,40),B.j,o,o,o,70,new A.ax(25,0,25,0),o,n)}}
+return A.b6(o,A.kx(B.jW,A.a([r,q,A.lX(A.bk(A.a([A.bk(o,o,A.bx().$1$fontWeight(B.V),"Elbek")],t.VO),o,p,"Developed by "),o)],s),B.fU,0,40),B.j,o,o,o,o,new A.ax(25,0,25,0),new A.ax(10,10,10,10),n)}}
 A.Ws.prototype={
 $0(){A.bh(u.E)},
 $S:0}
