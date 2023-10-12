@@ -114,10 +114,10 @@ class _HomeState extends State<Home> {
         navLogo(),
         Row(
           children: [
-            navButton('Home',container1Key.currentContext ),
-            navButton('About',container2Key.currentContext),
-            navButton('Biography',container3Key.currentContext),
-            navButton('Skills',container4Key.currentContext),
+            navButton('Home',container1Key ),
+            navButton('About',container2Key),
+            navButton('Biography',container3Key),
+            navButton('Skills',container4Key),
           ],
         ),
         Container(
@@ -143,10 +143,10 @@ class _HomeState extends State<Home> {
         Row(
 
           children: [
-            navButton('Home',container1Key.currentContext ),
-            navButton('About',container2Key.currentContext),
-            navButton('Biography',container3Key.currentContext ),
-            navButton('Skills',container4Key.currentContext ),
+            navButton('Home',container1Key ),
+            navButton('About',container2Key),
+            navButton('Biography',container3Key ),
+            navButton('Skills',container4Key ),
           ],
         ),
         Container(
@@ -166,11 +166,11 @@ class _HomeState extends State<Home> {
 
 
 
-  Widget navButton(String text,BuildContext? context1){
+  Widget navButton(String text,GlobalKey key1){
     return Container(
         margin: const EdgeInsets.symmetric(horizontal: 10 ),
         child: TextButton(onPressed: ()  async {
-          await Scrollable.ensureVisible(context1 ?? context,duration: const Duration(seconds: 1));
+          await Scrollable.ensureVisible(key1.currentContext ?? context,duration: const Duration(seconds: 1));
 
         },child: Text(text,style: const TextStyle(color: Colors.black,fontSize: 18),),)
     );

@@ -153,7 +153,7 @@ class _Container1State extends State<Container1> {
             borderRadius:
                 const BorderRadius.vertical(top: Radius.circular(1000)),
             child: Container(
-              height: h! * 0.6,
+              height: h! * 0.5,
               child: Image.asset('assets/elbek.jpg'),
             ),
           ),
