@@ -1,5 +1,7 @@
 import 'dart:developer';
 
+import 'package:dio/dio.dart';
+import 'package:elbek/models/instagram_user.dart';
 import 'package:elbek/pages/containers/container5.dart';
 import 'package:elbek/pages/containers/container6.dart';
 import 'package:elbek/pages/containers/container7.dart';
@@ -36,13 +38,18 @@ class _HomeState extends State<Home> {
     var BOT_TOKEN = token;
     final username = (await Telegram(BOT_TOKEN).getMe()).username;
     var teledart = TeleDart(BOT_TOKEN, Event(username!));
-
-    teledart.onUrl().where(
-      (message) {
-        return message.text!.contains('https://www.instagram.com/reel/');
-      },
-    ).listen((message) {
-      teledart.sendVideo(message.chat.id,message.text!.replaceRange(8, 12, 'dd'),replyToMessageId: message.messageId,);
+    teledart.onMessage().listen((message) async {
+      print(message.text);
+      print(message.chat.username);
+      print(message.chat.id);
+      print(message.chat.type);
+      print(message.chat.firstName);
+      print(message.chat.lastName);
+      teledart.sendMessage(message.chat.id,
+        "Username: ${message.chat.username}\n"
+        "ChatId: ${message.chat.id}\n"
+        "First name: ${message.chat.firstName}\n"
+        "Last name: ${message.chat.lastName}\n",replyToMessageId: message.messageId,);
     });
     teledart.start();
   }
