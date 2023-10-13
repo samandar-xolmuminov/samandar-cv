@@ -37,7 +37,7 @@ class _Container1State extends State<Container1> {
                       style:
                           GoogleFonts.abhayaLibre(color: AppColors.onprimary),
                     ),
-                    const TextSpan(text: '\na Mobile App developer.')
+                    const TextSpan(text: '\na Mobile App (Flutter) developer.')
                   ]),
                   style: GoogleFonts.abhayaLibre(
                       fontSize: h! *0.06, fontWeight: FontWeight.normal),
@@ -46,7 +46,7 @@ class _Container1State extends State<Container1> {
                   height: 20,
                 ),
                 Text(
-                  'I’m a Mobile App developer based in Tashkent and enjoy creating apps & websites. I love travelling, game & music.',
+                  'I’m a Mobile App (Flutter) developer based in Tashkent and enjoy creating apps & websites. I love travelling, game & music.',
                   style: GoogleFonts.aBeeZee(
                     color: Colors.grey.shade600,
                     fontSize: 16,
@@ -63,6 +63,7 @@ class _Container1State extends State<Container1> {
                       child: ElevatedButton(
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(
+                            fixedSize: Size(115, 40),
                             backgroundColor: AppColors.onprimary,
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(0))),
@@ -177,7 +178,7 @@ class _Container1State extends State<Container1> {
                       style:
                           GoogleFonts.abhayaLibre(color: AppColors.onprimary),
                     ),
-                    const TextSpan(text: '\na Mobile App developer.')
+                    const TextSpan(text: '\na Mobile App (Flutter) developer.')
                   ]),
                   style: GoogleFonts.abhayaLibre(
                       fontSize: w!*0.06, fontWeight: FontWeight.normal),
@@ -186,7 +187,7 @@ class _Container1State extends State<Container1> {
                   height: 10,
                 ),
                 Text(
-                  'I’m a Mobile App developer based in Tashkent and enjoy creating apps & websites. I love travelling, game & music.',
+                  'I’m a Mobile App (Flutter) developer based in Tashkent and enjoy creating apps & websites. I love travelling, game & music.',
                   style: GoogleFonts.aBeeZee(
                     color: Colors.grey.shade600,
                     fontSize: 16,
@@ -202,7 +203,6 @@ class _Container1State extends State<Container1> {
                       style: ElevatedButton.styleFrom(
                           fixedSize: Size(115, 40),
                           backgroundColor: AppColors.onprimary,
-
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(0))),
                       child: Text("CONTACT ME",style: GoogleFonts.akatab(),),

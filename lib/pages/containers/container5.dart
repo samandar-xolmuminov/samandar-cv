@@ -84,10 +84,10 @@ class Container5 extends StatelessWidget {
                               mainAxisSize: MainAxisSize.min,
                               children: [
                                 Text('View More',style: GoogleFonts.aBeeZee(fontSize: 15,color: Colors.blue),),
-                                SizedBox(
+                                const SizedBox(
                                   width: 5,
                                 ),
-                                Icon(
+                                const Icon(
                                   Icons.open_in_new,
                                   size: 15,
                                   color: Colors.blue,
@@ -140,10 +140,10 @@ class Container5 extends StatelessWidget {
                               mainAxisSize: MainAxisSize.min,
                               children: [
                                 Text('View More',style: GoogleFonts.aBeeZee(fontSize: 15,color: Colors.blue),),
-                                SizedBox(
+                                const SizedBox(
                                   width: 5,
                                 ),
-                                Icon(
+                                const Icon(
                                   Icons.open_in_new,
                                   size: 15,
                                   color: Colors.blue,
@@ -196,10 +196,10 @@ class Container5 extends StatelessWidget {
                               mainAxisSize: MainAxisSize.min,
                               children: [
                                 Text('View More',style: GoogleFonts.aBeeZee(fontSize: 15,color: Colors.blue),),
-                                SizedBox(
+                                const SizedBox(
                                   width: 5,
                                 ),
-                                Icon(
+                                const Icon(
                                   Icons.open_in_new,
                                   size: 15,
                                   color: Colors.blue,
@@ -216,6 +216,7 @@ class Container5 extends StatelessWidget {
                     viewportFraction: 330 / w!,
                     enlargeCenterPage: true,
                     enlargeFactor: 0.1,
+                    pauseAutoPlayOnTouch: true,
                     autoPlay: true,
                     pageSnapping: true,
                     autoPlayAnimationDuration: const Duration(seconds: 1)),
