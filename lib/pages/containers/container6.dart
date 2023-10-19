@@ -251,7 +251,7 @@ class Container6 extends StatelessWidget {
   }
   Widget MobileContainer6() {
     return Container(
-      constraints: BoxConstraints(maxWidth: w!*0.6),
+      constraints: BoxConstraints(maxWidth: w!*0.75),
       child: Column(
         children: [
           Text(
@@ -287,7 +287,7 @@ class Container6 extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                           color: Colors.black),
                     ),
-                    const SizedBox(height: 20,),
+
                     Text("This bot is written using the teledart package of the flutter framework of the dart language and this bot converts any type of video into audio. The bot user interface is in Uzbek"
                         ", Russian, and English, and there will be no problems using the bot.",
                       style: GoogleFonts.aBeeZee(

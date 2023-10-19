@@ -71,7 +71,7 @@ class _Container6_1State extends State<Container6_1> {
               Container(
                 height: 600,
                 padding:
-                    EdgeInsets.symmetric(vertical: 70, horizontal: w! * 0.1),
+                    EdgeInsets.symmetric(vertical: 70, horizontal: w! * 0.08),
                 decoration: BoxDecoration(color: Colors.white, boxShadow: [
                   BoxShadow(
                       color: AppColors.onprimary.withOpacity(0.5),
@@ -92,7 +92,7 @@ class _Container6_1State extends State<Container6_1> {
                       height: 70,
                     ),
                     SizedBox(
-                        width: 280,
+                        width: 260,
                         child: TextField(
                           controller: nameCon,
                           style: TextStyle(
@@ -125,7 +125,7 @@ class _Container6_1State extends State<Container6_1> {
                           cursorOpacityAnimates: true,
                         )),
                     SizedBox(
-                        width: 280,
+                        width: 260,
                         child: TextField(
                           style: TextStyle(
                               fontSize: 17,
@@ -158,7 +158,7 @@ class _Container6_1State extends State<Container6_1> {
                           cursorOpacityAnimates: true,
                         )),
                     SizedBox(
-                        width: 280,
+                        width: 260,
                         child: TextField(
                           style: TextStyle(
                               fontSize: 17,
@@ -196,7 +196,7 @@ class _Container6_1State extends State<Container6_1> {
                       height: 25,
                     ),
                     SizedBox(
-                      width: 280,
+                      width: 260,
                       height: 32,
                       child: ElevatedButton(
                         onPressed: () {
