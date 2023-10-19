@@ -5,7 +5,8 @@ import 'package:elbek/utils/colors.dart';
 import 'package:elbek/utils/constants.dart';
 
 class Container1 extends StatefulWidget {
-  const Container1({super.key});
+  GlobalKey container6_1Key;
+  Container1({super.key,required this.container6_1Key});
 
   @override
   State<Container1> createState() => _Container1State();
@@ -61,7 +62,10 @@ class _Container1State extends State<Container1> {
                       height: 40,
                       width: 120,
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () async{
+                          await Scrollable.ensureVisible(widget.container6_1Key.currentContext ?? context,
+                              duration: const Duration(seconds: 2));
+                        },
                         style: ElevatedButton.styleFrom(
                             fixedSize: Size(115, 40),
                             backgroundColor: AppColors.onprimary,
@@ -131,7 +135,10 @@ class _Container1State extends State<Container1> {
                 Row(
                   children: [
                     ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () async {
+                        await Scrollable.ensureVisible(widget.container6_1Key.currentContext ?? context,
+                            duration: const Duration(seconds: 2));
+                      },
                       style: ElevatedButton.styleFrom(
                           fixedSize: Size(115, 40),
                           backgroundColor: AppColors.onprimary,
@@ -199,7 +206,10 @@ class _Container1State extends State<Container1> {
                 Row(
                   children: [
                     ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () async{
+                        await Scrollable.ensureVisible(widget.container6_1Key.currentContext ?? context,
+                            duration: const Duration(seconds: 2));
+                      },
                       style: ElevatedButton.styleFrom(
                           fixedSize: Size(115, 40),
                           backgroundColor: AppColors.onprimary,

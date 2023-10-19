@@ -21,6 +21,8 @@ dependencies:
   teledart: ^0.6.1
   youtube_explode_dart: ^2.0.2
   dio: ^5.3.3
+  fluttertoast: ^8.2.2
+  lottie: ^2.6.0
 
 
 dev_dependencies:

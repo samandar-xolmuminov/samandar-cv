@@ -4,6 +4,7 @@ import 'package:dio/dio.dart';
 import 'package:elbek/models/instagram_user.dart';
 import 'package:elbek/pages/containers/container5.dart';
 import 'package:elbek/pages/containers/container6.dart';
+import 'package:elbek/pages/containers/container6_1.dart';
 import 'package:elbek/pages/containers/container7.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_launcher_icons/constants.dart';
@@ -33,31 +34,24 @@ class _HomeState extends State<Home> {
   final container3Key = GlobalKey();
   final container4Key = GlobalKey();
   final container5Key = GlobalKey();
+  final container6Key = GlobalKey();
+  final container6_1Key = GlobalKey();
 
-  Future<void> startBot() async {
+  Future<void> sendMessage(bool isSend,String email,String text) async {
     var BOT_TOKEN = token;
     final username = (await Telegram(BOT_TOKEN).getMe()).username;
     var teledart = TeleDart(BOT_TOKEN, Event(username!));
-    teledart.onMessage().listen((message) async {
-      print(message.text);
-      print(message.chat.username);
-      print(message.chat.id);
-      print(message.chat.type);
-      print(message.chat.firstName);
-      print(message.chat.lastName);
-      teledart.sendMessage(message.chat.id,
-        "Username: ${message.chat.username}\n"
-        "ChatId: ${message.chat.id}\n"
-        "First name: ${message.chat.firstName}\n"
-        "Last name: ${message.chat.lastName}\n",replyToMessageId: message.messageId,);
-    });
+    teledart.sendMessage('5925263907',
+        "Email: "
+        "Time: "
+        "Message: "
+        "");
     teledart.start();
   }
 
 
   @override
   void initState() {
-    startBot();
     super.initState();
   }
 
@@ -77,6 +71,7 @@ class _HomeState extends State<Home> {
             ),
             Container1(
               key: container1Key,
+              container6_1Key: container6_1Key,
             ),
             const Container2(),
             Container3(
@@ -88,8 +83,15 @@ class _HomeState extends State<Home> {
             Container5(
               key: container5Key,
             ),
-            Container6(),
-            Container7(),
+            Container6(
+              key: container6Key,
+            ),
+            Container6_1(
+            key: container6_1Key,
+            ),
+            Container7(
+
+            ),
           ],
         ),
       ),
@@ -172,6 +174,21 @@ class _HomeState extends State<Home> {
                       ],
                     ),
                   ),
+                  PopupMenuItem(
+                    onTap: () async {
+                      await Scrollable.ensureVisible(
+                          container6Key.currentContext ?? context,
+                          duration: const Duration(seconds: 1));
+                    },
+                    child: const Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          'Projects',
+                        ),
+                      ],
+                    ),
+                  ),
                 ];
               },
             )
@@ -192,13 +209,17 @@ class _HomeState extends State<Home> {
                 navButton('Biography', container3Key),
                 navButton('Expertise', container4Key),
                 navButton('Awards', container5Key),
+                navButton('Projects', container6Key),
               ],
             ),
             Container(
               height: 40,
               width: 120,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () async {
+                  await Scrollable.ensureVisible(container6_1Key.currentContext ?? context,
+                      duration: const Duration(seconds: 2));
+                },
                 style: ElevatedButton.styleFrom(
                     backgroundColor: AppColors.onprimary,
                     shape: RoundedRectangleBorder(
@@ -225,13 +246,17 @@ class _HomeState extends State<Home> {
                   navButton('Biography', container3Key),
                   navButton('Expertise', container4Key),
                   navButton('Awards', container5Key),
+                  navButton('Projects', container6Key),
                 ],
               ),
               Container(
                 height: 40,
                 width: 120,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () async {
+                    await Scrollable.ensureVisible(container6_1Key.currentContext ?? context,
+                        duration: const Duration(seconds: 2));
+                  },
                   style: ElevatedButton.styleFrom(
                       backgroundColor: AppColors.onprimary,
                       shape: RoundedRectangleBorder(
