@@ -57,14 +57,14 @@ class Container7 extends StatelessWidget {
               IconButton(
                 splashRadius: 20,
                 onPressed: () {
-                  launch('https://t.me/elbekmirzamaxmudov');
+                  launch('https://t.me/XolmuminovSamandar');
                 },
                 icon: const Icon(Icons.send_rounded),
               ),
               IconButton(
                 splashRadius: 20,
                 onPressed: () {
-                  launch('https://github.com/elbeekk');
+                  launch('https://github.com/samandar-xolmuminov');
                 },
                 icon: const Icon(MaterialCommunityIcons.github),
               ),
@@ -127,14 +127,14 @@ class Container7 extends StatelessWidget {
               IconButton(
                 splashRadius: 20,
                 onPressed: () {
-                  launch('https://t.me/elbekmirzamaxmudov');
+                  launch('https://t.me/XolmuminovSamandar');
                 },
                 icon: const Icon(Icons.send_rounded),
               ),
               IconButton(
                 splashRadius: 20,
                 onPressed: () {
-                  launch('https://github.com/elbeekk');
+                  launch('https://github.com/samandar-xolmuminov');
                 },
                 icon: const Icon(MaterialCommunityIcons.github),
               ),
@@ -197,14 +197,14 @@ class Container7 extends StatelessWidget {
               IconButton(
                 splashRadius: 20,
                 onPressed: () {
-                  launch('https://t.me/elbekmirzamaxmudov');
+                  launch('https://t.me/XolmuminovSamandar');
                 },
                 icon: const Icon(Icons.send_rounded),
               ),
               IconButton(
                 splashRadius: 20,
                 onPressed: () {
-                  launch('https://github.com/elbeekk');
+                  launch('https://github.com/samandar-xolmuminov');
                 },
                 icon: const Icon(MaterialCommunityIcons.github),
               ),

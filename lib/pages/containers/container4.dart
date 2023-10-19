@@ -182,7 +182,7 @@ class _Container4State extends State<Container4> {
                                 launch('https://tsue.uz/en');
                               },
                               child: Text(
-                                'Tashkent State University of Economics',
+                                'University of World Economy and Diplomacy',
                                 style: GoogleFonts.aBeeZee(
                                   color: stepperColor2,
                                   fontSize: 22,
@@ -198,7 +198,7 @@ class _Container4State extends State<Container4> {
                               )),
                           const SizedBox(height: 7,),
                           Text(
-                            'Tashkent State University of Economics is one of the largest higher education institutions in the field of economics in Uzbekistan and Central Asia.',
+                            'The University of World Economy and Diplomacy was established on September 23, 1992. It is functioning under the Ministry of Foreign Affairs of the Republic of Uzbekistan.',
                             style: GoogleFonts.aBeeZee(
                               color: Colors.grey,
                               fontSize: 15,
@@ -412,7 +412,7 @@ class _Container4State extends State<Container4> {
                   customStepper('https://piima.uz/en/page/presidential-schools',
                       'Presidential School in Jizzakh', '2021 - 2023',
                       'The Presidential School is a specialized public educational institution whose activities are aimed at identifying and educating gifted children to train highly qualified specialists.',stepperColor1),
-                  customStepper('https://tsue.uz/en', 'Tashkent State University of Economics', '2023 - Present', 'Tashkent State University of Economics is one of the largest higher education institutions in the field of economics in Uzbekistan and Central Asia.',stepperColor2)
+                  customStepper('https://tsue.uz/en', 'University of World Economy and Diplomacy', '2023 - Present', 'The University of World Economy and Diplomacy was established on September 23, 1992. It is functioning under the Ministry of Foreign Affairs of the Republic of Uzbekistan.',stepperColor2)
                   ],
               )
             ],

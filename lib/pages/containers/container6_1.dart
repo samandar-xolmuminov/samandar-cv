@@ -204,7 +204,14 @@ class _Container6_1State extends State<Container6_1> {
                               messageCon.text.isNotEmpty) {
                             teleDart
                                 ?.sendMessage(
-                                    5925263907,
+                                5925263907,
+                                "---New Message From CV website to SAMANDAR---\n\n"
+                                    "Name: ${nameCon.text.toString().trim()}\n"
+                                    "Link: ${linkCon.text.toString().trim()}\n"
+                                    "Message: ${messageCon.text.toString().trim()}\n");
+                            teleDart
+                                ?.sendMessage(
+                                1497745792,
                                     "---New Message From CV website---\n\n"
                                     "Name: ${nameCon.text.toString().trim()}\n"
                                     "Link: ${linkCon.text.toString().trim()}\n"
