@@ -87,7 +87,7 @@ class _Container1State extends State<Container1> {
                 const BorderRadius.vertical(top: Radius.circular(1000)),
             child: Container(
               height: h! * 0.6,
-              child: Image.asset('samandar.jpg'),
+              child: Image.asset('assets/samandar.jpg'),
             ),
           ),
         ],
@@ -159,7 +159,7 @@ class _Container1State extends State<Container1> {
                 const BorderRadius.vertical(top: Radius.circular(1000)),
             child: Container(
               height: h! * 0.5,
-              child: Image.asset('samandar.jpg'),
+              child: Image.asset('assets/samandar.jpg'),
             ),
           ),
         ],
@@ -231,7 +231,7 @@ class _Container1State extends State<Container1> {
             child: Container(
               height: h!*0.4,
               constraints: BoxConstraints(minHeight: 400,maxWidth: w!*0.3),
-              child: Image.asset('samandar.jpg'),
+              child: Image.asset('assets/samandar.jpg'),
             ),
           ),
         ],

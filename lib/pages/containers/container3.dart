@@ -55,7 +55,7 @@ class _Container2State extends State<Container3> {
         children: [
           Container(
               width: w!/2,
-              child: Image.asset('samandar1.jpg')),
+              child: Image.asset('assets/samandar1.jpg')),
           Container(
             width: w!/2,
               child: Padding(
@@ -275,7 +275,7 @@ class _Container2State extends State<Container3> {
       margin: const EdgeInsets.symmetric(vertical: 50),
       child: Wrap(
         children: [
-          Image.asset('samandar1.jpg'),
+          Image.asset('assets/samandar1.jpg'),
           Padding(
             padding: const EdgeInsets.only(left: 70, right: 50),
             child: Column(
@@ -499,7 +499,7 @@ class _Container2State extends State<Container3> {
         children: [
           SizedBox(
               width: w!,
-              child: Image.asset('samandar1.jpg')),
+              child: Image.asset('assets/samandar1.jpg')),
           const SizedBox(height: 50,),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20),
