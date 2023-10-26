@@ -37,12 +37,9 @@ class Container6 extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Container(
-                  constraints: BoxConstraints(
-                    maxWidth: 350,
-                    maxHeight: 250
-                  ),
-                  color: AppColors.onprimary,
-                  child: Lottie.asset('assets/telegramBot.json',fit: BoxFit.fill),
+                  height: 300,
+                  width: 250,
+                  child: Lottie.asset('assets/telegramBot.json',fit: BoxFit.fitWidth),
                 ),
                 const SizedBox(width: 25,),
                 Expanded(
@@ -57,7 +54,15 @@ class Container6 extends StatelessWidget {
                             fontWeight: FontWeight.bold,
                             color: Colors.black),
                       ),
-                      const SizedBox(height: 20,),
+                      const SizedBox(height: 10,),
+                      Text(
+                        '2023',
+                        style: GoogleFonts.aBeeZee(
+                            fontSize: 20,
+                            fontWeight: FontWeight.w500,
+                            color: Colors.black),
+                      ),
+                      const SizedBox(height: 10,),
                       Text("This bot is written using the teledart package of the flutter framework of the dart language and this bot converts any type of video into audio. The bot user interface is in Uzbek"
                           ", Russian, and English, and there will be no problems using the bot.",
                         style: GoogleFonts.aBeeZee(
@@ -69,6 +74,64 @@ class Container6 extends StatelessWidget {
                       InkWell(
                         onTap: (){
                           launch('https://t.me/video_to_audio0_bot');
+                        },
+                        child: const Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Text('view',style: TextStyle(color: Colors.blue),),
+                            SizedBox(width: 5,),
+                            Icon(Icons.open_in_new,size: 15,color: Colors.blue,),
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
+                )
+              ],
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Container(
+                  width: 250,
+                  height: 300,
+                  child: Lottie.asset('assets/student.json',fit: BoxFit.fitWidth),
+                ),
+                const SizedBox(width: 25,),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Text(
+                        'International Students',
+                        style: GoogleFonts.aBeeZee(
+                            fontSize: 22,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black),
+                      ),
+                      const SizedBox(height: 10,),
+                      Text(
+                        '2022',
+                        style: GoogleFonts.aBeeZee(
+                            fontSize: 20,
+                            fontWeight: FontWeight.w500,
+                            color: Colors.black),
+                      ),
+                      const SizedBox(height: 10,),
+                      Text("Our project aims to assist students throughout Uzbekistan in gaining knowledge about universities in the USA and UK. We provide guidance in preparing documents and submitting impressive applications.\n· 400+ users from different parts of the country\n· 15 events in different public schools\n· 100+ students received acceptance letters\n· \$40 million in scholarship funding\n· 26 students studying in the USA",
+                        style: GoogleFonts.aBeeZee(
+                            fontSize: 17,
+                            fontWeight: FontWeight.w500,
+                            height: 1.5,
+                            color: Colors.black),),
+                      const SizedBox(height: 20,),
+                      InkWell(
+                        onTap: (){
+                          launch('https://t.me/internationalstudentsPS');
                         },
                         child: const Row(
                           mainAxisSize: MainAxisSize.min,
@@ -146,59 +209,60 @@ class Container6 extends StatelessWidget {
                 fontSize: 45, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 80,),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Container(
-                  constraints: BoxConstraints(
-                      maxWidth: 350,
-                      maxHeight: 250
-                  ),
-                  color: AppColors.onprimary,
-                  child: Lottie.asset('assets/telegramBot.json',fit: BoxFit.fill),
-                ),
-                const SizedBox(width: 25,),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Telegram Bot',
-                        style: GoogleFonts.aBeeZee(
-                            fontSize: 22,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.black),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Container(
+                color: AppColors.onprimary,
+                child: Lottie.asset('assets/telegramBot.json',fit: BoxFit.fitWidth),
+              ),
+            SizedBox(width: 25,),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Telegram Bot',
+                      style: GoogleFonts.aBeeZee(
+                          fontSize: 22,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black),
+                    ),
+                    const SizedBox(height: 10,),
+                    Text(
+                      '2023',
+                      style: GoogleFonts.aBeeZee(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w500,
+                          color: Colors.black),
+                    ),
+                    const SizedBox(height: 10,),
+                    Text("This bot is written using the teledart package of the flutter framework of the dart language and this bot converts any type of video into audio. The bot user interface is in Uzbek"
+                        ", Russian, and English, and there will be no problems using the bot.",
+                      style: GoogleFonts.aBeeZee(
+                          fontSize: 17,
+                          fontWeight: FontWeight.w500,
+                          height: 1.5,
+                          color: Colors.black),),
+                    const SizedBox(height: 20,),
+                    InkWell(
+                      onTap: (){
+                        launch('https://t.me/video_to_audio0_bot');
+                      },
+                      child: const Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Text('view',style: TextStyle(color: Colors.blue),),
+                          SizedBox(width: 5,),
+                          Icon(Icons.open_in_new,size: 15,color: Colors.blue,),
+                        ],
                       ),
-                      const SizedBox(height: 20,),
-                      Text("This bot is written using the teledart package of the flutter framework of the dart language and this bot converts any type of video into audio. The bot user interface is in Uzbek"
-                          ", Russian, and English, and there will be no problems using the bot.",
-                        style: GoogleFonts.aBeeZee(
-                            fontSize: 17,
-                            fontWeight: FontWeight.w500,
-                            height: 1.5,
-                            color: Colors.black),),
-                      const SizedBox(height: 20,),
-                      InkWell(
-                        onTap: (){
-                          launch('https://t.me/video_to_audio0_bot');
-                        },
-                        child: const Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Text('view',style: TextStyle(color: Colors.blue),),
-                            SizedBox(width: 5,),
-                            Icon(Icons.open_in_new,size: 15,color: Colors.blue,),
-                          ],
-                        ),
-                      )
-                    ],
-                  ),
-                )
-              ],
-            ),
+                    )
+                  ],
+                ),
+              )
+            ],
           ),
           // Padding(
           //   padding: const EdgeInsets.all(8.0),
@@ -268,14 +332,15 @@ class Container6 extends StatelessWidget {
               alignment: WrapAlignment.center,
               crossAxisAlignment: WrapCrossAlignment.center,
               children: [
+                SizedBox(height: 20,),
                 Container(
                   constraints: BoxConstraints(
                       maxWidth: 350,
                       maxHeight: 250
                   ),
-                  color: AppColors.onprimary,
                   child: Lottie.asset('assets/telegramBot.json',fit: BoxFit.fill),
                 ),
+                SizedBox(height: 20,),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.start,
@@ -299,6 +364,58 @@ class Container6 extends StatelessWidget {
                     InkWell(
                       onTap: (){
                         launch('https://t.me/video_to_audio0_bot');
+                      },
+                      child: const Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Text('view',style: TextStyle(color: Colors.blue),),
+                          SizedBox(width: 5,),
+                          Icon(Icons.open_in_new,size: 15,color: Colors.blue,),
+                        ],
+                      ),
+                    )
+                  ],
+                )
+              ],
+            ),
+          ),
+          SizedBox(height: 50,),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Wrap(
+              runSpacing: 20,
+              alignment: WrapAlignment.center,
+              crossAxisAlignment: WrapCrossAlignment.center,
+              children: [
+                Container(
+                  constraints: BoxConstraints(
+                      maxWidth: 350,
+                      maxHeight: 250
+                  ),
+                  child: Lottie.asset('assets/student.json',fit: BoxFit.fill),
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    SizedBox(height: 20,),
+                    Text(
+                      'International Students',
+                      style: GoogleFonts.aBeeZee(
+                          fontSize: 22,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black),
+                    ),
+                    SizedBox(height: 20,),
+                    Text("Our project aims to assist students throughout Uzbekistan in gaining knowledge about universities in the USA and UK. We provide guidance in preparing documents and submitting impressive applications.\n· 400+ users from different parts of the country\n· 15 events in different public schools\n· 100+ students received acceptance letters\n· \$40 million in scholarship funding\n· 26 students studying in the USA",style: GoogleFonts.aBeeZee(
+                          fontSize: 17,
+                          fontWeight: FontWeight.w500,
+                          height: 1.5,
+                          color: Colors.black),),
+                    const SizedBox(height: 20,),
+                    InkWell(
+                      onTap: (){
+                        launch('https://t.me/internationalstudentsPS');
                       },
                       child: const Row(
                         mainAxisSize: MainAxisSize.min,

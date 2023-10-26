@@ -38,21 +38,23 @@ class _Container1State extends State<Container1> {
                       style:
                           GoogleFonts.abhayaLibre(color: AppColors.onprimary),
                     ),
-                    const TextSpan(text: '\na Mobile App (Flutter) developer.')
                   ]),
                   style: GoogleFonts.abhayaLibre(
-                      fontSize: h! *0.06, fontWeight: FontWeight.normal),
+                      fontSize: h! *0.07, fontWeight: FontWeight.normal),
                 ),
                 const SizedBox(
                   height: 20,
                 ),
-                Text(
-                  'I’m a Mobile App (Flutter) developer based in Tashkent and enjoy creating apps & websites. I love travelling, game & music.',
+                SelectableText.rich(TextSpan(
+                  text:'Mobile app developer, sprinter, video editor, aspiring leader. Striving to surpass limits and go beyond. ',
                   style: GoogleFonts.aBeeZee(
                     color: Colors.grey.shade600,
-                    fontSize: 16,
+                    fontSize: 18,
                   ),
-                ),
+                  children: [
+                    TextSpan(text: 'Favorite phrase: It is not over until I win',style: GoogleFonts.aBeeZee(fontWeight: FontWeight.bold))
+                  ]
+                ),),
                 const SizedBox(
                   height: 20,
                 ),
@@ -80,14 +82,16 @@ class _Container1State extends State<Container1> {
             ),
           ),
           const SizedBox(
-            height: 20,
+            height: 40,
           ),
-          ClipRRect(
-            borderRadius:
-                const BorderRadius.vertical(top: Radius.circular(1000)),
-            child: Container(
-              height: h! * 0.6,
-              child: Image.asset('assets/samandar.jpg'),
+          Padding(
+            padding: const EdgeInsets.all(25),
+            child: ClipRRect(
+              borderRadius:
+                  const BorderRadius.vertical(top: Radius.circular(1000)),
+              child: Container(
+                child: Image.asset('assets/samandar.jpg'),
+              ),
             ),
           ),
         ],
@@ -97,72 +101,77 @@ class _Container1State extends State<Container1> {
 
   // ========================== DESKTOP ==========================
   Widget DesktopContainer1() {
-    return Container(
-      margin: EdgeInsets.symmetric(horizontal: w! / 11, vertical: 20),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Container(
-            constraints: const BoxConstraints(maxWidth: 650),
-            width: w!*.4,
-            child: Column(
-              children: [
-                SelectableText.rich(
-                  TextSpan(text: "Hi, I’m ", children: [
-                    TextSpan(
-                      text: "Samandar Xolmuminov",
-                      style:
-                          GoogleFonts.abhayaLibre(color: AppColors.onprimary),
-                    ),
-                    const TextSpan(text: '\na Mobile App (Flutter) developer.')
-                  ]),
-                  style: GoogleFonts.abhayaLibre(
-                      fontSize: w! / 30, fontWeight: FontWeight.normal),
-                ),
-                const SizedBox(
-                  height: 10,
-                ),
-                Text(
-                  'I’m a Mobile App (Flutter) developer based in Tashkent and enjoy creating apps & websites. I love travelling, game & music.',
-                  style: GoogleFonts.aBeeZee(
-                    color: Colors.grey.shade600,
-                    fontSize: 16,
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Container(
+        margin: EdgeInsets.symmetric(horizontal: w! / 11, vertical: 20),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Container(
+              constraints: const BoxConstraints(maxWidth: 650),
+              width: w!*.4,
+              child: Column(
+                children: [
+                  SelectableText.rich(
+                    TextSpan(text: "Hi, I’m ", children: [
+                      TextSpan(
+                        text: "Samandar Xolmuminov",
+                        style:
+                            GoogleFonts.abhayaLibre(color: AppColors.onprimary),
+                      ),
+                    ]),
+                    style: GoogleFonts.abhayaLibre(
+                        fontSize: w! / 25, fontWeight: FontWeight.normal),
                   ),
-                ),
-                const SizedBox(
-                  height: 20,
-                ),
-                Row(
-                  children: [
-                    ElevatedButton(
-                      onPressed: () async {
-                        await Scrollable.ensureVisible(widget.container6_1Key.currentContext ?? context,
-                            duration: const Duration(seconds: 2));
-                      },
-                      style: ElevatedButton.styleFrom(
-                          fixedSize: Size(115, 40),
-                          backgroundColor: AppColors.onprimary,
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(0))),
-                      child: Text("CONTACT ME",style: GoogleFonts.akatab(),),
-                    ),
-                  ],
-                ),
-              ],
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  SelectableText.rich(TextSpan(
+                      text:'Mobile app developer, sprinter, video editor, aspiring leader. Striving to surpass limits and go beyond. ',
+                      style: GoogleFonts.aBeeZee(
+                        color: Colors.grey.shade700,
+                        fontSize: 18,
+                      ),
+                      children: [
+                        TextSpan(text: 'Favorite phrase: It is not over until I win.',style: GoogleFonts.aBeeZee(fontWeight: FontWeight.bold))
+                      ]
+                  ),),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: [
+                      ElevatedButton(
+                        onPressed: () async {
+                          await Scrollable.ensureVisible(widget.container6_1Key.currentContext ?? context,
+                              duration: const Duration(seconds: 2));
+                        },
+                        style: ElevatedButton.styleFrom(
+                            fixedSize: Size(115, 40),
+                            backgroundColor: AppColors.onprimary,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(0))),
+                        child: Text("CONTACT ME",style: GoogleFonts.akatab(),),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
             ),
-          ),
-          const SizedBox(
-            width: 80,
-          ),
-          ClipRRect(
-            borderRadius:
-                const BorderRadius.vertical(top: Radius.circular(1000)),
-            child: Container(
-              height: h! * 0.5,
-              child: Image.asset('assets/samandar.jpg'),
+            const SizedBox(
+              width: 80,
             ),
-          ),
-        ],
+            ClipRRect(
+              borderRadius:
+                  const BorderRadius.vertical(top: Radius.circular(1000)),
+              child: Container(
+                height: h! * 0.5,
+                child: Image.asset('assets/samandar.jpg'),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -175,7 +184,6 @@ class _Container1State extends State<Container1> {
         children: [
           Container(
             width: w!*0.5,
-
             child: Column(
               children: [
                 SelectableText.rich(
@@ -185,7 +193,6 @@ class _Container1State extends State<Container1> {
                       style:
                           GoogleFonts.abhayaLibre(color: AppColors.onprimary),
                     ),
-                    const TextSpan(text: '\na Mobile App (Flutter) developer.')
                   ]),
                   style: GoogleFonts.abhayaLibre(
                       fontSize: w!*0.06, fontWeight: FontWeight.normal),
@@ -193,13 +200,16 @@ class _Container1State extends State<Container1> {
                 const SizedBox(
                   height: 10,
                 ),
-                Text(
-                  'I’m a Mobile App (Flutter) developer based in Tashkent and enjoy creating apps & websites. I love travelling, game & music.',
-                  style: GoogleFonts.aBeeZee(
-                    color: Colors.grey.shade600,
-                    fontSize: 16,
-                  ),
-                ),
+                SelectableText.rich(TextSpan(
+                    text:'Mobile app developer, sprinter, video editor, aspiring leader. Striving to surpass limits and go beyond. ',
+                    style: GoogleFonts.aBeeZee(
+                      color: Colors.grey.shade600,
+                      fontSize: 18,
+                    ),
+                    children: [
+                      TextSpan(text: 'Favorite phrase: It is not over until I win',style: GoogleFonts.aBeeZee(fontWeight: FontWeight.bold))
+                    ]
+                ),),
                 const SizedBox(
                   height: 20,
                 ),

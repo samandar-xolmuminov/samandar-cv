@@ -79,9 +79,7 @@ class Container2 extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(
-            height: 100,
-          ),
+
         ],
       ),
     );

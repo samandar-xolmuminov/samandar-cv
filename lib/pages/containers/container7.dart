@@ -1,4 +1,3 @@
-import 'package:elbek/utils/colors.dart';
 import 'package:elbek/utils/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
@@ -32,26 +31,21 @@ class Container7 extends StatelessWidget {
               IconButton(
                   splashRadius: 20,
                   onPressed: () {
-                    launch('https://www.facebook.com/elbekmirzamaxmudov/');
+                    launch('https://www.facebook.com/profile.php?id=100090950464057');
                   },
                   icon: const Icon(MaterialCommunityIcons.facebook)),
               IconButton(
                   splashRadius: 20,
                   onPressed: () {
-                    launch('https://www.instagram.com/el.bekk/');
+                    launch('https://www.instagram.com/xsa_samandar');
                   },
                   icon: const Icon(MaterialCommunityIcons.instagram)),
-              IconButton(
-                  splashRadius: 20,
-                  onPressed: () {
-                    launch('https://twitter.com/EMirzamakhmudov');
-                  },
-                  icon: const Icon(MaterialCommunityIcons.twitter)),
+
               IconButton(
                   splashRadius: 20,
                   onPressed: () {
                     launch(
-                        'https://www.linkedin.com/in/elbek-mirzamakhmudov-4b91aa260/');
+                        'https://www.youtube.com/@SamandarXolmuminov-bk9qb');
                   },
                   icon: const Icon(MaterialCommunityIcons.youtube)),
               IconButton(
@@ -69,20 +63,12 @@ class Container7 extends StatelessWidget {
                 icon: const Icon(MaterialCommunityIcons.github),
               ),
 
-              IconButton(
-                splashRadius: 20,
-                onPressed: () {
-                  launch(
-                      'https://www.linkedin.com/in/elbek-mirzamakhmudov-4b91aa260/');
-                },
-                icon: const Icon(MaterialCommunityIcons.linkedin),
-              ),
 
             ],
           ),
           Text('© 2023 CV. All Rights Reserved.',style: GoogleFonts.aBeeZee(fontSize: 16),),
            SelectableText.rich(TextSpan(
-              text: 'Developed by ',style: GoogleFonts.aBeeZee(fontSize: 16), children: [TextSpan(text: 'Elbek',style: GoogleFonts.aBeeZee(fontWeight: FontWeight.bold))]))
+              text: 'Developed by ',style: GoogleFonts.aBeeZee(fontSize: 16), children: [TextSpan(text: 'Samandar',style: GoogleFonts.aBeeZee(fontWeight: FontWeight.bold))]))
         ],
       ),
     );
@@ -102,26 +88,20 @@ class Container7 extends StatelessWidget {
               IconButton(
                   splashRadius: 20,
                   onPressed: () {
-                    launch('https://www.facebook.com/elbekmirzamaxmudov/');
+                    launch('https://www.facebook.com/profile.php?id=100090950464057');
                   },
                   icon: const Icon(MaterialCommunityIcons.facebook)),
               IconButton(
                   splashRadius: 20,
                   onPressed: () {
-                    launch('https://www.instagram.com/el.bekk/');
+                    launch('https://www.instagram.com/xsa_samandar');
                   },
                   icon: const Icon(MaterialCommunityIcons.instagram)),
               IconButton(
                   splashRadius: 20,
                   onPressed: () {
-                    launch('https://twitter.com/EMirzamakhmudov');
-                  },
-                  icon: const Icon(MaterialCommunityIcons.twitter)),
-              IconButton(
-                  splashRadius: 20,
-                  onPressed: () {
                     launch(
-                        'https://www.linkedin.com/in/elbek-mirzamakhmudov-4b91aa260/');
+                        'https://www.youtube.com/@SamandarXolmuminov-bk9qb');
                   },
                   icon: const Icon(MaterialCommunityIcons.youtube)),
               IconButton(
@@ -138,21 +118,11 @@ class Container7 extends StatelessWidget {
                 },
                 icon: const Icon(MaterialCommunityIcons.github),
               ),
-
-              IconButton(
-                splashRadius: 20,
-                onPressed: () {
-                  launch(
-                      'https://www.linkedin.com/in/elbek-mirzamakhmudov-4b91aa260/');
-                },
-                icon: const Icon(MaterialCommunityIcons.linkedin),
-              ),
-
             ],
           ),
           Text('© 2023 CV. All Rights Reserved.',style: GoogleFonts.aBeeZee(fontSize: 16),),
            SelectableText.rich(TextSpan(
-              text: 'Developed by ',style: GoogleFonts.aBeeZee(fontSize: 16), children: [TextSpan(text: 'Elbek',style: GoogleFonts.aBeeZee(fontWeight: FontWeight.bold))]))
+              text: 'Developed by ',style: GoogleFonts.aBeeZee(fontSize: 16), children: [TextSpan(text: 'Samandar',style: GoogleFonts.aBeeZee(fontWeight: FontWeight.bold))]))
         ],
       ),
     );
@@ -172,26 +142,21 @@ class Container7 extends StatelessWidget {
               IconButton(
                   splashRadius: 20,
                   onPressed: () {
-                    launch('https://www.facebook.com/elbekmirzamaxmudov/');
+                    launch('https://www.facebook.com/profile.php?id=100090950464057');
                   },
                   icon: const Icon(MaterialCommunityIcons.facebook)),
               IconButton(
                   splashRadius: 20,
                   onPressed: () {
-                    launch('https://www.instagram.com/el.bekk/');
+                    launch('https://www.instagram.com/xsa_samandar');
                   },
                   icon: const Icon(MaterialCommunityIcons.instagram)),
-              IconButton(
-                  splashRadius: 20,
-                  onPressed: () {
-                    launch('https://twitter.com/EMirzamakhmudov');
-                  },
-                  icon: const Icon(MaterialCommunityIcons.twitter)),
+
               IconButton(
                   splashRadius: 20,
                   onPressed: () {
                     launch(
-                        'https://www.linkedin.com/in/elbek-mirzamakhmudov-4b91aa260/');
+                        'https://www.youtube.com/@SamandarXolmuminov-bk9qb');
                   },
                   icon: const Icon(MaterialCommunityIcons.youtube)),
               IconButton(
@@ -208,21 +173,11 @@ class Container7 extends StatelessWidget {
                 },
                 icon: const Icon(MaterialCommunityIcons.github),
               ),
-
-              IconButton(
-                splashRadius: 20,
-                onPressed: () {
-                  launch(
-                      'https://www.linkedin.com/in/elbek-mirzamakhmudov-4b91aa260/');
-                },
-                icon: const Icon(MaterialCommunityIcons.linkedin),
-              ),
-
             ],
           ),
           Text('© 2023 CV. All Rights Reserved.',style: GoogleFonts.aBeeZee(fontSize: 16),),
            SelectableText.rich(TextSpan(
-              text: 'Developed by ',style: GoogleFonts.aBeeZee(fontSize: 16), children: [TextSpan(text: 'Elbek',style: GoogleFonts.aBeeZee(fontWeight: FontWeight.bold))]))
+              text: 'Developed by ',style: GoogleFonts.aBeeZee(fontSize: 16), children: [TextSpan(text: 'Samandar',style: GoogleFonts.aBeeZee(fontWeight: FontWeight.bold))]))
         ],
       ),
     );

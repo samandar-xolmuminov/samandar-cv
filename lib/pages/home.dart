@@ -1,4 +1,5 @@
 import 'dart:developer';
+import 'dart:html';
 
 import 'package:dio/dio.dart';
 import 'package:elbek/models/instagram_user.dart';
@@ -73,7 +74,6 @@ class _HomeState extends State<Home> {
               key: container1Key,
               container6_1Key: container6_1Key,
             ),
-            const Container2(),
             Container3(
               key: container3Key,
             ),
@@ -86,9 +86,8 @@ class _HomeState extends State<Home> {
             Container6(
               key: container6Key,
             ),
-            Container6_1(
-            key: container6_1Key,
-            ),
+            const Container2(),
+            Container6_1(key: container6_1Key,),
             Container7(
 
             ),
@@ -104,7 +103,6 @@ class _HomeState extends State<Home> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            const Icon(Icons.search),
             navLogo(),
             PopupMenuButton(
               splashRadius: 25,
@@ -139,7 +137,7 @@ class _HomeState extends State<Home> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
-                          'Biography',
+                          'About Me',
                         ),
                       ],
                     ),
@@ -169,7 +167,7 @@ class _HomeState extends State<Home> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
-                          'Awards',
+                          'Achievements',
                         ),
                       ],
                     ),
@@ -206,9 +204,9 @@ class _HomeState extends State<Home> {
             Row(
               children: [
                 navButton('Home', container1Key),
-                navButton('Biography', container3Key),
+                navButton('About Me', container3Key),
                 navButton('Expertise', container4Key),
-                navButton('Awards', container5Key),
+                navButton('Achievements', container5Key),
                 navButton('Projects', container6Key),
               ],
             ),
@@ -243,9 +241,9 @@ class _HomeState extends State<Home> {
               Row(
                 children: [
                   navButton('Home', container1Key),
-                  navButton('Biography', container3Key),
+                  navButton('About Me', container3Key),
                   navButton('Expertise', container4Key),
-                  navButton('Awards', container5Key),
+                  navButton('Achievements', container5Key),
                   navButton('Projects', container6Key),
                 ],
               ),
@@ -286,10 +284,20 @@ class _HomeState extends State<Home> {
 
   Widget navLogo() {
     return Container(
-      width: 110,
-      child: GradientText(
-        'CV',
-        colors: [Colors.red.shade800, Colors.red],
+      height: 40,
+      width: 120,
+      child: ElevatedButton(
+        onPressed: () async {
+          AnchorElement anchorElement =
+          AnchorElement(href: 'assets/cv.pdf');
+          anchorElement.download = "Samandar's CV";
+          anchorElement.click();
+        },
+        style: ElevatedButton.styleFrom(
+            backgroundColor: AppColors.onprimary,
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(0))),
+        child: Text("Download CV", style: GoogleFonts.akatab()),
       ),
     );
   }
