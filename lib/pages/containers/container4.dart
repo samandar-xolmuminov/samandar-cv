@@ -108,10 +108,7 @@ class _Container4State extends State<Container4> {
                                   });
                                 },
                                 child: InkWell(
-                                  onTap: () {
-                                    launch(
-                                        'https://piima.uz/en/page/presidential-schools');
-                                  },
+                                  onTap: null,
                                   child: Text(
                                     'House President',
                                     style: GoogleFonts.aBeeZee(
@@ -190,9 +187,7 @@ class _Container4State extends State<Container4> {
                                   });
                                 },
                                 child: InkWell(
-                                  onTap: () {
-                                    launch('https://tsue.uz/en');
-                                  },
+                                  onTap: null,
                                   child: Text(
                                     'Sprinter',
                                     style: GoogleFonts.aBeeZee(
@@ -271,9 +266,7 @@ class _Container4State extends State<Container4> {
                                   });
                                 },
                                 child: InkWell(
-                                  onTap: () {
-                                    launch('https://tsue.uz/en');
-                                  },
+                                  onTap:null,
                                   child: Text(
                                     'Computer Gaming',
                                     style: GoogleFonts.aBeeZee(

@@ -1,5 +1,5 @@
 import 'dart:developer';
-import 'dart:html';
+import 'dart:html' as html;
 
 import 'package:dio/dio.dart';
 import 'package:elbek/models/instagram_user.dart';
@@ -21,6 +21,7 @@ import 'package:simple_gradient_text/simple_gradient_text.dart';
 import 'package:teledart/model.dart';
 import 'package:teledart/teledart.dart';
 import 'package:teledart/telegram.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_explode_dart/youtube_explode_dart.dart';
 
 class Home extends StatefulWidget {
@@ -288,10 +289,7 @@ class _HomeState extends State<Home> {
       width: 120,
       child: ElevatedButton(
         onPressed: () async {
-          AnchorElement anchorElement =
-          AnchorElement(href: 'assets/cv.pdf');
-          anchorElement.download = "Samandar's CV";
-          anchorElement.click();
+        launch('https://firebasestorage.googleapis.com/v0/b/telegram-bot-54d17.appspot.com/o/cv.pdf?alt=media&token=9cf10c07-94e4-45a6-997d-75cd4c975d36');
         },
         style: ElevatedButton.styleFrom(
             backgroundColor: AppColors.onprimary,
