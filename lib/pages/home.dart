@@ -1,14 +1,8 @@
-import 'dart:developer';
-import 'dart:html' as html;
-
-import 'package:dio/dio.dart';
-import 'package:elbek/models/instagram_user.dart';
 import 'package:elbek/pages/containers/container5.dart';
 import 'package:elbek/pages/containers/container6.dart';
 import 'package:elbek/pages/containers/container6_1.dart';
 import 'package:elbek/pages/containers/container7.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_launcher_icons/constants.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:elbek/pages/containers/container1.dart';
@@ -17,12 +11,9 @@ import 'package:elbek/pages/containers/container3.dart';
 import 'package:elbek/pages/containers/container4.dart';
 import 'package:elbek/utils/colors.dart';
 import 'package:elbek/utils/constants.dart';
-import 'package:simple_gradient_text/simple_gradient_text.dart';
-import 'package:teledart/model.dart';
 import 'package:teledart/teledart.dart';
 import 'package:teledart/telegram.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:youtube_explode_dart/youtube_explode_dart.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -40,15 +31,15 @@ class _HomeState extends State<Home> {
   final container6_1Key = GlobalKey();
 
   Future<void> sendMessage(bool isSend,String email,String text) async {
-    var BOT_TOKEN = token;
-    final username = (await Telegram(BOT_TOKEN).getMe()).username;
-    var teledart = TeleDart(BOT_TOKEN, Event(username!));
-    teledart.sendMessage('5925263907',
+    var botToken = token;
+    final username = (await Telegram(botToken).getMe()).username;
+    var telDart = TeleDart(botToken, Event(username!));
+    telDart.sendMessage('5925263907',
         "Email: "
         "Time: "
         "Message: "
         "");
-    teledart.start();
+    telDart.start();
   }
 
 
@@ -89,9 +80,7 @@ class _HomeState extends State<Home> {
             ),
             const Container2(),
             Container6_1(key: container6_1Key,),
-            Container7(
-
-            ),
+            const Container7(),
           ],
         ),
       ),

@@ -23,7 +23,6 @@ class Container7 extends StatelessWidget {
       width: w!,
       height: 70,
       child: Wrap(
-        crossAxisAlignment: WrapCrossAlignment.center,
         alignment: WrapAlignment.spaceBetween,
         children: [
           Wrap(

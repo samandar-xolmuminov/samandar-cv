@@ -31,7 +31,7 @@ class Container5 extends StatelessWidget {
           child: Column(
             children: [
               Text(
-                'Certificates & Diplomas',
+                'Achievements',
                 textAlign: TextAlign.center,
                 style: GoogleFonts.bodoniModa(
                     fontSize: 45, fontWeight: FontWeight.bold),
@@ -392,7 +392,7 @@ class Container5 extends StatelessWidget {
                             child: Container(
                               padding: const EdgeInsets.all(10),
                           child: SelectableText.rich(
-                              TextSpan(text: "4-time State Champion and 1-time National Champion in the 100m sprint (2017-2020)\n· 2-time State Champion in the 200m sprint    (2019-2020)",),
+                              TextSpan(text: "· 4-time State Champion and 1-time National Champion in the 100m sprint (2017-2020)\n· 2-time State Champion in the 200m sprint    (2019-2020)",),
                           style: GoogleFonts.aBeeZee(fontSize: 20,fontWeight: FontWeight.w500,color: Colors.black),),
                         ),),
                         // TextButton(
